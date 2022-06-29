@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: 'Roboto Condensed', sans-serif;
+   margin: 0;
+}
+
+a {
+   text-decoration: none;
+}
+
+header {
+   width: 96%;
+   height: 100px;
+   border-bottom: 1px solid #eae8f3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 2%;
+   margin-bottom: 100px;
+   position: relative;
+}
+
+.contactBtn {
+   background: #714eff;
+   padding: 20px;
+   border: 1.5px solid #3b3b3b;
+   border-radius: 10px;
+   color: white;
+   font-size: 22px;
+   margin: auto;
+   transition: all 1s ease;
+}
+
+.lngToggle {
+   padding: 3px;
+   position: absolute;
+   right: 3%;
+   background-color: transparent;
+   width: 40px;
+   height: 40px;
+   border: none;
+   border:3px solid #3b3b3b;
+   border-radius: 17px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+
+.lngToggle img {
+   width: 110%;
+}
+
+.main {
+   margin: 0 8% 100px;
+   text-align: center;
+}
+
+.main h1 {
+   color: #3b3b3b;
+   font-size: 40px;
+   margin-bottom: 50px;
+}
+
+.works {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-bottom: 100px;
+}
+
+.workCard {
+   display: block;
+   width: 285px;
+   height: 250px;
+   padding: 15px;
+   border: 2px solid #3b3b3b;
+   border-radius: 10px;
+   box-shadow: 0 0px 100px 0 #3b3b3b75;
+   ;
+   transition: 0.5s ease;
+   margin: 15px;
+   visibility: hidden;
+}
+
+.workCard:hover {
+   transform: scale(1.05);
+   box-shadow: 0 0 80px 20px #2400ff73;
+}
+
+.workdCard-img {
+   width: 100%;
+   height: 200px;
+   background-image: url(./img/What-is-Your-Website-Design-Process-Blog-Post-Feature-Image-36119-01.png);
+   background-size: cover;
+   background-position: 50% 50%;
+   background-color: #714eff;
+   margin-bottom: 15px;
+   border: 2px solid #3b3b3b;
+   border-radius: 5px;
+}
+
+.workCard-body {
+   width: 100%;
+   height: 85px;
+   font-size: 18px;
+   color: #3b3b3b;
+}
+
+.skills {
+   margin-bottom: 100px;
+   display: flex;
+   justify-content: center;
+}
+
+.list-1 img,
+.list-2 img {
+   width: 100px;
+   margin: 20px;
+}
+
+footer {
+   color: white;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   padding: 100px 0;
+   background-color: #714eff;
+   border-top-right-radius: 150px;
+   box-shadow: 0 0px 100px -3px #3b3b3bcf;
+   outline: 3px solid #3b3b3b;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+}
+
+input,
+textarea {
+   border: 2px solid #3b3b3b;
+   outline: none;
+   border-radius: 10px;
+   margin: 10px;
+   padding: 10px;
+   font-size: 18px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   color: #4f4f4f;
+   resize: none;
+}
+
+textarea {
+   height: 200px;
+}
+
+#submit {
+   width: 150px;
+   background-color: #0ca45e;
+   color: rgba(255, 255, 255, 0.701);
+   transition: 0.5s ease;
+}
+
+#submit:hover {
+   color: white;
+   border-color: white;
+}
+
+#file {
+   border: none;
+   color: transparent;
+   font-weight: normal;
+   width: 78px;
+}
+
+label {
+   font-size: 20px;
+   letter-spacing: 1px;
+}
+
+#file::-webkit-file-upload-button {
+   visibility: hidden;
+}
+
+#file::before {
+   content: 'Select';
+   background: #ffffff;
+   border: 2px solid #3b3b3b;
+   border-radius: 10px;
+   padding: 10px;
+   outline: none;
+   cursor: pointer;
+   font-size: 18px;
+   color: #3b3b3b;
+}
+
+.fullname {
+   display: flex;
+}
+
+.nameBlock,
+.surnameBlock,
+.mail,
+.comment {
+   display: flex;
+   flex-direction: column;
+}
+
+.file {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+   .fullname {
+      flex-direction: column;
+   }
+}
+
+@media only screen and (max-width: 1381px) {
+   .skills {
+      flex-direction: column;
+   }
+}
+
+._animItem {
+   animation-duration: 2s;
+   visibility: hidden;
+}
+
+.active {
+   visibility: visible;
+   animation-name: slideUpBlur;
+}
+
+@keyframes slideUpBlur {
+   0% {
+      opacity: 0;
+      transform: scale(0);
+   }
+
+   100% {
+      opacity: 1;
+      transform: scale(1);
+   }
+}
